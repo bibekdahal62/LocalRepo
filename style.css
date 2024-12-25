@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: hsl(0, 0%, 30%);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.navbar li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 18px 18px 18px;
+    font-size: 20px;
+    color: white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    background-color: hsl(0, 0%, 30%);
+}
+
+.navbar li a:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.dropdown-btn:hover .dropdown{
+    display: block;
+}
